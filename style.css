@@ -136,3 +136,50 @@ span{
 #mision img{
     width: 50%;
 }
+
+/* PRODUCTOS */
+.productos{
+    background-color: #FF4713;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-carbon{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+   
+}
+#landing-product .wine-carb{
+    width: 50vw;
+    height: 30vw;
+    background-color: #F5A023;
+}
+  
+
+.wine-carb{
+    color:#425CC7;
+    font-size: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#landing-producto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+/* 
+.contenedor-wine-carb{
+    height: 50px;
+    width: 50px;
+    
+}
+ */
+
+/*THE END PRODUCTOS*/
