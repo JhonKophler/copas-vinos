@@ -36,13 +36,18 @@ section{
     color: #F4F2E3;
 }
 
+button img:hover{
+    cursor: pointer;
+}
+
 #btn-round img{
     width: 10rem;
-    position: absolute;
+    position: fixed;
     right: 2vw;
     top: 10vh;
     animation: 20s rotate linear infinite;
     transform-origin: 50% 50%;
+    overflow: hidden;
 }
 
 @keyframes rotate {
