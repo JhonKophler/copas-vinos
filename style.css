@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color:#F4F2E3;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1em 0;
+    overflow: hidden;
+}
+
+nav img{
+    width: 15vw;
+}
+
+nav ul{
+    width: 65%;
+    margin: 0 1em;
+    padding: 1em 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section{
+    color: #F4F2E3;
+}
+
+#btn-round img{
+    width: 10rem;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+    animation: 20s rotate linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+#landing{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#landing img{
+    width: 50vw;
+}
+
+#png{
+    background-color: #001A15;
+}
+
+#png img{
+    width: 50%;
+}
+
+#que-hacemos{
+    width: 100%;
+    background-color: #425CC7;
+    color: #F4F2E3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.copa{
+    position: relative;
+    bottom: 1vh;
+    left: -40vw;
+}
+
+.copa img{
+    width: 5em;
+}
+
+.quienes-somos{
+    width: 80%;
+    font-size:36px;
+}
+
+span{
+    font-size: 121px;
+}
+
+#vision{
+    background-color:#F5A023;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#vision img{
+    width: 50%;
+}
+
+#mision{
+    background-color: #425CC7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#mision img{
+    width: 50%;
+}
