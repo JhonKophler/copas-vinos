@@ -5,8 +5,9 @@
     font-size: 24px;
 }
 
-ul{
-    list-style-type: none;
+.link{
+    text-decoration: none;
+    color: #001A15;
 }
 
 nav{
@@ -23,13 +24,14 @@ nav img{
     width: 15vw;
 }
 
-nav ul{
+nav .menu{
     width: 65%;
     margin: 0 1em;
     padding: 1em 0;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    
 }
 
 section{
