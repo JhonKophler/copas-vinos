@@ -215,3 +215,49 @@ span{
 }
 
 /* THE END PRODUCT */
+
+/* BODEGAS */
+.bck-brown{
+    background-color: #F5A023 !important;
+}
+
+.contenedor-img-bode{
+    width: 100%;
+    height: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* THE END BODEGAS */
+
+/* CONTACT */
+.contact{
+    background-color: #001A15 !important;
+    height: 100% !important;
+}
+.box-contact{
+    display: flex; 
+    
+}
+.box-contact-one{
+    background-color: #F5A023;
+    width: 250px;
+    height: 350px;
+
+}
+.box-contact-two{
+    background-color: #FF4713;
+    width: 550px;
+    height: 175px;
+}
+.box-contact-three{
+    background-color: #425CC7;
+    width: 550px;
+    height: 175px;
+    
+    
+
+}
+/* THE END CONTACT */
+/*  */
