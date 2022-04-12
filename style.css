@@ -237,27 +237,43 @@ span{
     height: 100% !important;
 }
 .box-contact{
-    display: flex; 
+    position: absolute;
+    margin-top: 25px;
     
 }
 .box-contact-one{
     background-color: #F5A023;
     width: 250px;
-    height: 350px;
+    height: 250px;
+    float: left;
 
 }
 .box-contact-two{
     background-color: #FF4713;
-    width: 550px;
-    height: 175px;
+    width: 645px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 .box-contact-three{
     background-color: #425CC7;
-    width: 550px;
-    height: 175px;
-    
-    
-
+    width: 645px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
 }
+.text-contact{
+    color: #425CC7;
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+    margin-bottom: 95px;
+}
+.mail, .phone{
+    margin: auto;            
+}
+
 /* THE END CONTACT */
 /*  */
