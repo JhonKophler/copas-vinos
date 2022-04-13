@@ -40,7 +40,7 @@ section{
 
 button img:hover{
     cursor: pointer;
-}
+} 
 
 #btn-round img{
     width: 10rem;
@@ -94,13 +94,15 @@ button img:hover{
     padding: 3rem;
 }
 
-.copa{
+.copa ,
+.copa-white{
     position: relative;
     bottom: 1vh;
     left: -40vw;
 }
 
-.copa img{
+.copa ,
+.copa-white img{
     width: 5em;
 }
 
@@ -141,26 +143,31 @@ span{
 .productos{
     background-color: #FF4713;
     width: 100%;
-    height: 100%;
+    height: 500px;
 }
-
-.contenedor-carbon{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    text-align: center;
-   
-}
-#landing-product .wine-carb{
-    width: 50vw;
-    height: 30vw;
+#png-brown{
     background-color: #F5A023;
+    display: flex;
+    flex-direction: column;
 }
-  
+#landing ,
+#png-orange{
+    background-color: #FF4713;
+}
+#png-blue{
+    background-color: #425CC7;
 
-.wine-carb{
+}
+.wine{
+    max-width: 50vw;
+    max-height: 50vw; 
+    
+}
+
+.wine-carb , 
+.wine-vaca ,
+.wine-negro ,
+.wine-prox{
     color:#425CC7;
     font-size: 50px;
     display: flex;
@@ -168,18 +175,105 @@ span{
     justify-content: center;
     align-items: center;
 }
-#landing-producto{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
+.wine-negro{
+    color: #F5A023;
 }
-/* 
-.contenedor-wine-carb{
-    height: 50px;
-    width: 50px;
+.wine-musas{
+    font-size: 25px;
+}
+.vm-carb{
+    color: #425CC7;
+}
+.vm-vaca {
+    color: #425CC7;
+    margin-right: auto;
     
 }
- */
+.vm-negro{
+    color: #F5A023;
+    margin-right: auto;
+}
+.wine-prox{
+    color: #F4F2E3;
+}
+/* BUTTON DE PRODUCT */
 
-/*THE END PRODUCTOS*/
+
+#btn-round-product img{
+    width: 10rem;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+    animation: 20s rotate linear infinite;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* THE END PRODUCT */
+
+/* BODEGAS */
+.bck-brown{
+    background-color: #F5A023 !important;
+}
+
+.contenedor-img-bode{
+    width: 100%;
+    height: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* THE END BODEGAS */
+
+/* CONTACT */
+.contact{
+    background-color: #001A15 !important;
+    height: 100% !important;
+}
+.box-contact{
+    position: absolute;
+    margin-top: 25px;
+    
+}
+.box-contact-one{
+    background-color: #F5A023;
+    width: 250px;
+    height: 250px;
+    float: left;
+
+}
+.box-contact-two{
+    background-color: #FF4713;
+    width: 645px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.box-contact-three{
+    background-color: #425CC7;
+    width: 645px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+}
+.text-contact{
+    color: #425CC7;
+    display: flex;
+    justify-content: center;
+    margin: 55px;
+    margin-bottom: 95px;
+}
+.mail, .phone{
+    margin: auto;            
+}
+
+/* THE END CONTACT */
+/*  */
