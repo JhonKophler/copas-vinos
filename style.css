@@ -275,5 +275,65 @@ span{
     margin: auto;            
 }
 
+
 /* THE END CONTACT */
-/*  */
+/* MAYORIA DE EDAD */
+.box-question-one{
+    background-color: #F5A023;
+    width: 100vh; 
+    height: 100vh;
+    float: left;
+
+}
+.box-question-two{
+    background-color: #425CC7;
+    /* width: 645px; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.box-question-three{
+    background-color: #001A15;
+    /* width: 645px; */
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.text-question{
+    color: #425CC7;
+    display: flex;
+    justify-content: center;
+    margin-top: 175px;
+    font-size: 85px;
+   /*  margin-bottom: 95px; */
+    
+}
+.yes, .no{
+    margin: auto; 
+    color: #F5A023;  
+    font-size: 65px;         
+}
+.yes{
+    height: 50vh;
+    width: 110vh;
+    background-color: #425CC7;
+    border: #425CC7;
+}
+.yes:hover , .no:hover{
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+     
+}
+
+.no{
+    height: 50vh;
+    width: 110vh;
+    background-color: #001A15;
+    border:#001A15;
+   
+}
+/* THE END MAYORIA DE EDAD */
