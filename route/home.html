@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../splide-sea-green.min.css">
     <title>Vinos y Copas</title>
 </head>
 <body>
     <nav>
 
-        <img src="../src/logo.png" alt="">
+        <div class="logo">
+            <a href="../index.html" class="link"><img src="../src/logo.png" alt=""></a>
+        </div>
         
         <div class="menu">
             <a href="hacemos.html" class="link">QUÉ HACEMOS</a>
@@ -24,8 +27,45 @@
 <!--     LANDING    -->
     <section id="landing">
         <div id="png" class="contenedor-img"><img src="../src/botella-mesa-de-trabajo.png" alt=""></div>
-        <div class="contenedor-img"><img src="../src/img/Foto1-01.png" alt=""></div>
+        <div class="contenedor-img">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="../src/img/Foto1-01.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../src/img/Foto2-01.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../src/img/Foto3-01.png" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../src/img/Foto4-01.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
+    <script src="../splide.min.js"></script>
+    <script>
+
+    var splide = new Splide('.splide', {
+            direction: 'ttb',
+            height: '100vh',
+            wheel: true,
+            type: 'loop',
+            pagination: false,
+            autoplay    : true,
+            autoScroll: {
+                speed: 1,
+            },
+        });
+        
+        splide.mount();
+        
+        </script>
 </body>
 </html>
