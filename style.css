@@ -1,17 +1,125 @@
+@font-face {
+    font-family: 'gadugi-normal';
+    src: url(../copas-vinos/src/Fuentes/gadugi-normal.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'javatext';
+    src: url(../copas-vinos/src/Fuentes/javatext.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'songer-extrabold';
+    src: url(../copas-vinos/src/Fuentes/SONGER_SE_ExtraBold.otf) ;
+}
+@font-face {
+    font-family: 'songer-regular';
+    src: url(../copas-vinos/src/Fuentes/SONGER_SE_Regular.otf) ;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 1vw;
+    transition: .5s;
+    --verde:#001A15;
+    --azul: #425cc7;
+    --naranja: #f5A023;
+    --rojo: #ff4713 ;
+    --blanco: #f4f2e3;
 }
 
+/* MAYORIA DE EDAD */
+
+.box-question , yes, no{
+    font-family: songer-regular !important;
+    
+}
+.box-question{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-question-one{
+    background-color: var(--naranja);
+    width: 50vw;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-question-two{
+    background-color: var(--azul);
+    width:100%;
+}
+.box-question-three{
+    background-color: var(--verde);
+    width:100%;
+}
+.answer{
+    width: 50vw;
+    user-select: none;
+}
+.text-question{
+    color: var(--azul);
+    display: flex;
+    justify-content: center;
+    font-size: 85px;
+}
+.yes, .no{
+    font-family: times;
+    font-style: italic;
+    margin: auto;  
+    font-size: 46px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    cursor: pointer;  
+    height: 50vh;
+    width: 50vhw;
+}
+.yes{
+    color: var(--rojo);
+    background-color: var(--azul);
+    border: var(--azul);
+}
+
+.no{
+    color: var(--naranja);
+    background-color: var(--verde);
+    border:var(--verde);
+}
+
+.yes:hover , .no:hover{
+    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px #fff;
+     
+}
+/* THE END MAYORIA DE EDAD */
+
 .link{
+    font-size:1.2rem;
     text-decoration: none;
-    color: #001A15;
+    color: var(--verde);
+}
+.link:hover{
+    text-decoration: underline;
 }
 
 nav{
-    background-color:#F4F2E3;
+    top: -20%;
+    position:absolute;
+    width:100%;
+    background-color:var(--blanco);
     display:flex;
     flex-direction: row;
     justify-content:space-around;
@@ -25,6 +133,7 @@ nav img{
 }
 
 nav .menu{
+    font-family: songer-regular;
     width: 65%;
     margin: 0 1em;
     padding: 1em 0;
@@ -35,41 +144,30 @@ nav .menu{
 }
 
 section{
-    color: #F4F2E3;
-}
-
-button img:hover{
-    cursor: pointer;
-} 
-
-#btn-round img{
-    width: 10rem;
-    position: fixed;
-    right: 2vw;
-    top: 10vh;
-    animation: 20s rotate linear infinite;
-    transform-origin: 50% 50%;
-    overflow: hidden;
-}
-
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    color: var(--blanco);
 }
 
 #landing{
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
+
 .contenedor-img{
-    width: 50%;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.contenedor-img h2{
+    font-family: songer-extrabold;
+    font-size: 121px;
 }
 
 #landing img{
@@ -77,136 +175,187 @@ button img:hover{
 }
 
 #png{
-    background-color: #001A15;
+    width: 50vw;
+    background-color: var(--verde);
 }
 
 #png img{
     width: 50%;
+    height: 50%;
+}
+
+#global{
+    top: -3rem;
 }
 
 #que-hacemos{
     width: 100%;
-    background-color: #425CC7;
-    color: #F4F2E3;
+    height: 100vh;
+    background-color: var(--azul);
+    color: var(--blanco);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 3rem;
+    overflow: hidden;
 }
 
 .copa ,
 .copa-white{
-    position: relative;
-    bottom: 1vh;
-    left: -40vw;
+    position: fixed;
+    left: 1rem;
+    top: 4rem;
+    overflow: hidden;
+    z-index: 20;
 }
 
 .copa ,
 .copa-white img{
-    width: 5em;
+    width: 5em !important;
 }
 
 .quienes-somos{
     width: 80%;
-    font-size:36px;
+}
+div p{
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-family: songer-regular;
+    word-spacing: 7px;
+    line-height: 2rem;
 }
 
 span{
-    font-size: 121px;
+    font-size: 7rem;
+    font-family: songer-regular;
+}
+
+.parentesis{
+    font-family: times;
+    font-style: italic;
+}
+
+.text-50{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+
+section .contenedor-img img{
+    width: 50vw;
+    height: 110vh;
 }
 
 #vision{
-    background-color:#F5A023;
+    background-color:var(--naranja);
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#vision img{
-    width: 50%;
 }
 
 #mision{
-    background-color: #425CC7;
+    background-color: var(--azul);
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+/* BODEGA */
 
-#mision img{
-    width: 50%;
+.nuestros-vinedos{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--verde);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* END BODEGA */
+
 
 /* PRODUCTOS */
 .productos{
-    background-color: #FF4713;
+    background-color: var(--rojo);
     width: 100%;
     height: 500px;
 }
 #png-brown{
-    background-color: #F5A023;
+    background-color: var(--naranja);
     display: flex;
     flex-direction: column;
 }
 #landing ,
 #png-orange{
-    background-color: #FF4713;
+    background-color: var(--rojo);
 }
 #png-blue{
-    background-color: #425CC7;
+    background-color: var(--azul);
 
 }
 .wine{
     max-width: 50vw;
-    max-height: 50vw; 
-    
 }
 
 .wine-carb , 
 .wine-vaca ,
 .wine-negro ,
 .wine-prox{
-    color:#425CC7;
-    font-size: 50px;
+    color:var(--azul);
+    font-size: 1rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 .wine-negro{
-    color: #F5A023;
+    color: var(--naranja);
 }
 .wine-musas{
-    font-size: 25px;
+    font-size: .3em;
 }
 .vm-carb{
-    color: #425CC7;
+    color: var(--azul);
 }
 .vm-vaca {
-    color: #425CC7;
+    color: var(--azul);
     margin-right: auto;
     
 }
 .vm-negro{
-    color: #F5A023;
+    color: var(--naranja);
     margin-right: auto;
 }
 .wine-prox{
-    color: #F4F2E3;
+    color: var(--blanco);
 }
 /* BUTTON DE PRODUCT */
 
 
-#btn-round-product img{
-    width: 10rem;
-    position: absolute;
+#btn-round img{
+    width: 8rem ;
+    position: fixed;
     right: 2vw;
-    top: 10vh;
+    top: 4rem;
     animation: 20s rotate linear infinite;
     transform-origin: 50% 50%;
     overflow: hidden;
+    z-index: 20;
+}
+
+#landing .btn-round-product{
+    width: 2px ;
+    position: fixed;
+    animation: 20s rotate linear infinite;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    z-index: 20;
 }
 
 @keyframes rotate {
@@ -218,12 +367,12 @@ span{
 
 /* BODEGAS */
 .bck-brown{
-    background-color: #F5A023 !important;
+    background-color: var(--naranja) !important;
 }
 
 .contenedor-img-bode{
-    width: 100%;
-    height: 60vw;
+    width: 50vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,108 +381,77 @@ span{
 /* THE END BODEGAS */
 
 /* CONTACT */
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact{
-    background-color: #001A15 !important;
-    height: 100% !important;
+    background-color: var(--verde) !important;
+    justify-content: space-between !important;
 }
 .box-contact{
-    position: absolute;
-    margin-top: 25px;
-    
+    padding: 2rem 0;
 }
-.box-contact-one{
-    background-color: #F5A023;
-    width: 250px;
-    height: 250px;
-    float: left;
-
-}
-.box-contact-two{
-    background-color: #FF4713;
-    width: 645px;
-    height: 125px;
+.adress{
     display: flex;
-    justify-content: center;
-    
-    
-}
-.box-contact-three{
-    background-color: #425CC7;
-    width: 645px;
-    height: 125px;
-    display: flex;
-    justify-content: center;
-}
-.text-contact{
-    color: #425CC7;
-    display: flex;
-    justify-content: center;
-    margin: 55px;
-    margin-bottom: 95px;
-}
-.mail, .phone{
-    margin: auto;            
+    flex-direction: row;
 }
 
+.yellow{
+    font-family: times;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: var(--naranja);
+    width: 15vw;
+    text-align: center;
+    color: var(--azul);
+    padding: 1.8rem;
+}
+
+.net{
+    font-family: songer-regular ;
+    font-size: 1.3rem;
+    background-color: var(--azul);
+    width: 43vw;
+    text-align: center;
+    padding: 1.8rem;
+}
+
+.red{
+    color: var(--verde);
+    background-color: var(--rojo);
+}
+
+.blue{
+    color: var(--naranja);
+}
+
+.confidencial{
+    font-size: 1rem;
+    font-family: songer-regular;
+}
 
 /* THE END CONTACT */
-/* MAYORIA DE EDAD */
-.box-question-one{
-    background-color: #F5A023;
-    width: 100vh; 
-    height: 100vh;
-    float: left;
+
+
+
+/* VIDEO YOUTUBE */
+.content-media{
+    width: 100%;
+    position: relative;
+    background-color:rgb(0, 0, 0);
+    display: block;
+    width: 100%;
+    padding-bottom: 45.19%;
 
 }
-.box-question-two{
-    background-color: #425CC7;
-    /* width: 645px; */
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    
-    
-}
-.box-question-three{
-    background-color: #001A15;
-    /* width: 645px; */
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-}
-.text-question{
-    color: #425CC7;
-    display: flex;
-    justify-content: center;
-    margin-top: 175px;
-    font-size: 85px;
-   /*  margin-bottom: 95px; */
-    
-}
-.yes, .no{
-    margin: auto; 
-    color: #F5A023;  
-    font-size: 65px;         
-}
-.yes{
-    height: 50vh;
-    width: 110vh;
-    background-color: #425CC7;
-    border: #425CC7;
-}
-.yes:hover , .no:hover{
-    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-    outline-color: rgba(49, 138, 172, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px #fff;
-     
-}
-
-.no{
-    height: 50vh;
-    width: 110vh;
-    background-color: #001A15;
-    border:#001A15;
-   
-}
-/* THE END MAYORIA DE EDAD */
+.content-media--video iframe{
+    position: absolute;
+     right: 0;
+     width: 100%;
+     height: 100%;
+ }
