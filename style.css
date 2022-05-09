@@ -123,8 +123,7 @@ nav .menu{
     padding: 1em 0;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 menu{
@@ -245,14 +244,14 @@ section{
 }
 div p{
     text-align: justify;
-    margin-top: 7rem;
-    font-size: 1.8rem;
+    margin-top: 5vw;
+    font-size: 1.5vw;
     word-spacing: 7px;
     line-height: 2rem;
 }
 
 span{
-    font-size: 7rem;
+    font-size: 5vw;
 }
 
 .parentesis{
@@ -369,10 +368,10 @@ section .contenedor-img img{
 
 
 #btn-round img{
-    width: 13vw ;
+    width: 13% ;
     position: fixed;
     right: 5rem;
-    top: 4rem;
+    top: 7.5rem;
     animation: 20s rotate linear infinite;
     transform-origin: 50% 50%;
     overflow: hidden;
