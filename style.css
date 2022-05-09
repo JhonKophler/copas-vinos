@@ -1,28 +1,13 @@
-@font-face {
-    font-family: 'gadugi-normal';
-    src: url(../copas-vinos/src/Fuentes/gadugi-normal.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'javatext';
-    src: url(../copas-vinos/src/Fuentes/javatext.ttf) format('truetype');
-}
-@font-face {
-    font-family: 'songer-extrabold';
-    src: url(../copas-vinos/src/Fuentes/SONGER_SE_ExtraBold.otf) ;
-}
-@font-face {
-    font-family: 'songer-regular';
-    src: url(../copas-vinos/src/Fuentes/SONGER_SE_Regular.otf) ;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 1vw;
-    transition: .5s;
+    font-size: 13px;
+    text-transform: uppercase;
+    user-select: none;
     scroll-snap-type: y mandatory;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     --verde:#001A15;
     --azul: #425cc7;
     --naranja: #f5A023;
@@ -30,12 +15,11 @@
     --blanco: #f4f2e3;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* MAYORIA DE EDAD */
 
-.box-question , yes, no{
-    font-family: songer-regular !important;
-    
-}
 .box-question{
     display: flex;
     flex-direction: row;
@@ -69,16 +53,19 @@
     user-select: none;
 }
 .text-question{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: var(--azul);
     display: flex;
     justify-content: center;
     font-size: 85px;
 }
 .yes, .no{
-    font-family: times;
+    font-family: 'Noto Serif Display', serif !important;
     font-style: italic;
+    font-weight: 400;
     margin: auto;  
-    font-size: 46px;  
+    font-size: 85px;  
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -98,26 +85,22 @@
     border:var(--verde);
 }
 
-.yes:hover , .no:hover{
-    box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-    outline-color: rgba(49, 138, 172, 0);
-    outline-offset: 80px;
-    text-shadow: 1px 1px 6px #fff;
-     
-}
+
 /* THE END MAYORIA DE EDAD */
 
 .link{
-    font-size:1.2rem;
+    font-size:1.8rem;
     text-decoration: none;
     color: var(--verde);
+    font-weight: 600;
 }
 .link:hover{
     text-decoration: underline;
 }
 
 nav{
-    top: -20%;
+    transition: all 0.5s;
+    top: -200px;
     position:absolute;
     width:100%;
     background-color:var(--blanco);
@@ -135,7 +118,34 @@ nav img{
 }
 
 nav .menu{
-    font-family: songer-regular;
+    width: 65%;
+    margin: 0 1em;
+    padding: 1em 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+menu{
+    transition: all 0.5s;
+    top: 0px;
+    width:100%;
+    background-color:var(--blanco);
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: 1em 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+
+menu img{
+    width: 15vw;
+}
+
+menu .menu{
     width: 65%;
     margin: 0 1em;
     padding: 1em 0;
@@ -146,7 +156,6 @@ nav .menu{
 }
 
 section{
-    transition: 1s;
     scroll-snap-align: start;
     color: var(--blanco);
 }
@@ -177,7 +186,8 @@ section{
 }
 
 .contenedor-img h2{
-    font-family: songer-extrabold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 121px;
 }
 
@@ -213,8 +223,9 @@ section{
 
 .copa ,
 .copa-white{
+    transition: all 0.5s;
     position: fixed;
-    left: 1rem;
+    left: 7rem;
     top: 4rem;
     overflow: hidden;
     z-index: 20;
@@ -226,27 +237,27 @@ section{
 
 .copa ,
 .copa-white img{
-    width: 5em !important;
+    width: 8em !important;
 }
 
 .quienes-somos{
-    width: 80%;
+    width: 55%;
 }
 div p{
-    margin-top: 3rem;
+    text-align: justify;
+    margin-top: 7rem;
     font-size: 1.8rem;
-    font-family: songer-regular;
     word-spacing: 7px;
     line-height: 2rem;
 }
 
 span{
     font-size: 7rem;
-    font-family: songer-regular;
 }
 
 .parentesis{
-    font-family: times;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -254,8 +265,13 @@ span{
     width: 50vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-35{
+    width: 75%;
 }
 
 section .contenedor-img img{
@@ -355,7 +371,7 @@ section .contenedor-img img{
 #btn-round img{
     width: 13vw ;
     position: fixed;
-    right: 2vw;
+    right: 5rem;
     top: 4rem;
     animation: 20s rotate linear infinite;
     transform-origin: 50% 50%;
@@ -406,7 +422,8 @@ section .contenedor-img img{
     background-color: var(--verde) !important;
 }
 .box-contact{
-    padding: 4rem 0;
+    width: 80%;
+    padding: 6rem 0;
 }
 .adress{
     display: flex;
@@ -414,22 +431,23 @@ section .contenedor-img img{
 }
 
 .yellow{
-    font-family: times;
+    font-family: 'Noto Serif Display', serif;
     font-style: italic;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: bolder;
     background-color: var(--naranja);
     width: 15vw;
     color: var(--azul);
-    padding: 2vh;
+    padding: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .net{
-    font-family: songer-regular ;
     font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     background-color: var(--azul);
     width: 43vw;
     text-align: center;
@@ -439,20 +457,57 @@ section .contenedor-img img{
 .red{
     color: var(--verde);
     background-color: var(--rojo);
+    user-select: text!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blue{
     color: var(--naranja);
+    user-select: text!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .confidencial{
+    position: absolute;
+    width: 90%;
     font-size: 1rem;
-    font-family: songer-regular;
+    bottom: 0rem;
+    padding: 4rem;
 }
 
 /* THE END CONTACT */
 
+/* DENEGADO */
 
+.tamanio{
+    width: 25%;
+    text-align: center;
+}
+.denegado{
+    width: 100%;
+    height: 100vh;
+    color: var(--blanco);
+    background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.denegado span{
+    font-size: 2rem;
+}
+
+.denegado img{
+    width: 18%;
+    position: absolute;
+    bottom: 10%;
+    right: 41.5%;
+}
 
 /* VIDEO YOUTUBE */
 .content-media{

@@ -4,6 +4,8 @@ const botonCopa = document.querySelector('.copa-white');
 const botonRound = document.querySelector('#btn-round');
 const nave = document.querySelector('nav');
 
+/* nave.nave.style.top = '-200px'; */
+
 
 botonCopa.addEventListener('click', ()=> {
 
@@ -18,7 +20,7 @@ botonCopa.addEventListener('click', ()=> {
     }
     
     if(posicionTop > '0'){
-        nave.style.top = '-200%';
+        nave.style.top = '-200px';
         botonCopa.style.top='4rem';
     }
 })

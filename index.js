@@ -7,7 +7,7 @@ respYes.addEventListener('click', ()=> {
 })
 
 respNo.addEventListener('click', ()=>  {
-    alert("REGRESA A LOS 18 AÑOS");
+    window.location = './route/error.html';
 })
 
 
