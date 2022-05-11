@@ -305,11 +305,27 @@ section .contenedor-img img{
     background-image: url('../src/img/Foto4-01.png');
 }
 /* FIN SLIDER */
+
+/* IMAGENES TOTALES DE LA PAGINA BACKGROUND */
+
+/* HACEMOS */
 .img-botella-azul{
     background-image: url('../src/img/Imagen-03.png');
 }
 .img-camion-rojo{
     background-image: url('../src/img/Imagen2-03.png');
+}
+/* BODEGA */
+.img-santonegro-logo{
+    background-image: url('../src/img/Imagen3-03.png');
+}
+.img-santonegro-bodega{
+    background-image: url('../src/img/Imagen4-03.png');
+}
+.img-santonegro-logo .clickeable-santonegro{
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
 }
 
 #vision{
@@ -338,6 +354,9 @@ section .contenedor-img img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.bodega-text{
+    width: 50%;
 }
 
 /* END BODEGA */
@@ -480,14 +499,12 @@ section .contenedor-img img{
     font-size: 1.8rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    background-color: var(--azul);
     width: 43vw;
     text-align: center;
 }
 
 .red{
-    color: var(--verde);
-    background-color: var(--rojo);
+    color: var(--rojo);
     user-select: text!important;
     display: flex;
     align-items: center;
@@ -622,7 +639,7 @@ section .contenedor-img img{
             cursor: pointer;
         }
         .icono i{
-            font-size: 4rem;
+            font-size: 3rem;
         }
 
         #btn-round img{
@@ -716,6 +733,17 @@ section .contenedor-img img{
         }
         .img-responsive-botella{
             background-image: url('../src/img/Imagen-03.png');
+        }
+        /* BODEGA */
+        #png-brown{
+            display: none;
+        }
+        #bodega{
+            width: 100%; 
+            display: inline;
+        }
+        .bodega-text{
+            width: 80%;
         }
         .back-img-responsive{
             background-repeat: no-repeat;
