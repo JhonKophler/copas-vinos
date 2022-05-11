@@ -668,7 +668,7 @@ section .contenedor-img img{
             top: 3%;
         }
         .copa-white img{
-            width: 5rem !important;
+            width: 10vw !important;
         }
         nav{
             top: -300px;
@@ -697,9 +697,9 @@ section .contenedor-img img{
             width: 95%;
         }
         div p{
-            margin-top: 4.5rem;
+            margin-top: 4.5vh;
             font-size: 3vw;
-            line-height: 2rem;
+            line-height: 3vh;
         }
         
         .contenedor-img{
@@ -710,7 +710,7 @@ section .contenedor-img img{
         }
         .que-hacemos-img-bottom img{
             position: absolute;
-            bottom: 5%;
+            bottom: 2%;
             left: 40%;
             width: 20vw; 
         }
