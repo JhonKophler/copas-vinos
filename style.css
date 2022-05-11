@@ -506,17 +506,12 @@ section .contenedor-img img{
 .red{
     color: var(--rojo);
     user-select: text!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .blue{
     color: var(--naranja);
     user-select: text!important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 2vh;
 }
 
 .confidencial{
@@ -525,6 +520,7 @@ section .contenedor-img img{
     font-size: 1rem;
     bottom: 0rem;
     padding: 3% 4%;
+    
 }
 
 /* THE END CONTACT */
