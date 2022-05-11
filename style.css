@@ -89,7 +89,7 @@ html{
 /* THE END MAYORIA DE EDAD */
 
 .link{
-    font-size:1.8rem;
+    font-size:1.5rem;  
     text-decoration: none;
     color: var(--verde);
     font-weight: 600;
@@ -125,7 +125,9 @@ nav .menu{
     flex-direction: row;
     justify-content: space-between;    
 }
-
+.icono{
+    display: none;
+}
 menu{
     transition: all 0.5s;
     top: 0px;
@@ -151,7 +153,6 @@ menu .menu{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 
 section{
@@ -190,6 +191,14 @@ section{
     font-size: 121px;
 }
 
+.back-img{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
 #landing img{
     width: 50vw;
 }
@@ -219,7 +228,9 @@ section{
     padding: 3rem;
     overflow: hidden;
 }
-
+.que-hacemos-img-bottom{
+    display:none;  
+}
 .copa ,
 .copa-white{
     transition: all 0.5s;
@@ -228,15 +239,16 @@ section{
     top: 4rem;
     overflow: hidden;
     z-index: 20;
-}
-
-.copa-white:hover{
     cursor: pointer;
 }
 
 .copa ,
 .copa-white img{
     width: 8em !important;
+}
+
+#movile{
+    display:none;
 }
 
 .quienes-somos{
@@ -276,6 +288,28 @@ span{
 section .contenedor-img img{
     width: 50vw;
     height: 110vh;
+}
+
+/* IMAGENES ADAPTABLES DESKTOP Y MOVILE */
+/* SLIDER */
+.img-hombre-rojo{
+    background-image: url('../src/img/Foto1-01.png');
+}
+.img-hombre-amarillo{
+    background-image: url('../src/img/Foto2-01.png');
+}
+.img-botella-roja{
+    background-image: url('../src/img/Foto3-01.png');
+}
+.img-botellas-amarillas{
+    background-image: url('../src/img/Foto4-01.png');
+}
+/* FIN SLIDER */
+.img-botella-azul{
+    background-image: url('../src/img/Imagen-03.png');
+}
+.img-camion-rojo{
+    background-image: url('../src/img/Imagen2-03.png');
 }
 
 #vision{
@@ -437,7 +471,6 @@ section .contenedor-img img{
     background-color: var(--naranja);
     width: 15vw;
     color: var(--azul);
-    padding: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,7 +483,6 @@ section .contenedor-img img{
     background-color: var(--azul);
     width: 43vw;
     text-align: center;
-    padding: 2rem;
 }
 
 .red{
@@ -475,7 +507,7 @@ section .contenedor-img img{
     width: 90%;
     font-size: 1rem;
     bottom: 0rem;
-    padding: 4rem;
+    padding: 3% 4%;
 }
 
 /* THE END CONTACT */
@@ -524,3 +556,172 @@ section .contenedor-img img{
      width: 100%;
      height: 100%;
  }
+
+
+ /* MEDIA QUERIES */
+
+    @media (max-width: 890px) {
+        .font-query h2,.font-query div{
+            font-size: 6vw;
+        }
+        .font-query span{
+            font-size: 4vw;
+        }
+        .box-question{
+            flex-direction: column;
+        }
+        .box-question-one{
+            width: 100vw;
+            height: 50vh;
+        }
+        .answer{
+            display: flex;
+            flex-direction: arrow;
+            width: 100vw;
+        }
+        .tamanio{
+            width: 50%;
+        }
+        .denegado img{
+            width: 35%;
+            right: 32.5%;
+        }
+        /* MENU RESPONSIVE home*/
+        
+        menu{
+            position: absolute;
+            flex-direction: column;
+            text-align: center;
+            z-index: 20;
+        }
+        menu img{
+            width: 30vw;
+        }
+        .menu{
+            padding:0 !important;
+        }
+        .menu-responsive-header{
+            display: flex;
+            align-items: center;
+        }
+        .menu-responsive-link{
+           flex-direction: column !important; 
+        }
+        .menu-responsive-link a{
+            font-size: 120% !important;
+            padding: 2vw 0;
+        }
+        .icono{
+            display: block;
+            color: #001A15 ;
+            z-index: 40;
+            position: absolute;
+            left: 10%;
+        }
+        .icono:hover{
+            cursor: pointer;
+        }
+        .icono i{
+            font-size: 4rem;
+        }
+
+        #btn-round img{
+            width: 20%;
+            right: 2%;
+            top: 1%;
+        }
+
+        #landing .img-first{
+            display: none;
+        }
+        .contenedor-slider{
+            display: inline!important;
+            width: 100vw;
+        }
+        #landing img{
+            width: 100vw;
+        }
+
+        .no-vision{
+            height: 0 !important; ;
+            transition: all .5s;
+            opacity: 0;
+        }
+        .vision{
+            padding: 5vw 0 !important;
+            height: 30vh !important; ;
+            transition: all .5s;
+            opacity: 1;
+        }
+
+         /* END MENU RESPONSIVE home */
+
+        /* MENU RESPONSIVE GENERAL */
+        #desktop{
+            display: none;
+        }
+        #movile{
+            display: inline;
+        }
+        .copa-white{
+            left: 9%;
+            top: 3%;
+        }
+        .copa-white img{
+            width: 5rem !important;
+        }
+        nav{
+            top: -300px;
+        }
+        nav,nav .menu{
+            flex-direction: column;
+            text-align: center;
+        }
+        nav img{
+            width: 20vw;
+        }
+
+        nav .link{
+            padding: .4rem 0;
+        }
+        /* END MENU RESPONSIVE */
+
+        /* HACEMOS */
+        span{
+            font-size: 7vw;
+        }
+        .quienes-somos{
+            width: 90%;
+        }
+        .text-50,.text-35{
+            width: 95%;
+        }
+        div p{
+            margin-top: 4.5rem;
+            font-size: 3vw;
+            line-height: 2rem;
+        }
+        
+        .contenedor-img{
+            display:none;
+        }
+        .que-hacemos-img-bottom{
+            display:inline !important;  
+        }
+        .que-hacemos-img-bottom img{
+            position: absolute;
+            bottom: 5%;
+            left: 40%;
+            width: 20vw; 
+        }
+        .img-responsive-botella{
+            background-image: url('../src/img/Imagen-03.png');
+        }
+        .back-img-responsive{
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    }

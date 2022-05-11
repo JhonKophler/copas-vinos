@@ -12,8 +12,12 @@
 </head>
 <body>
     <nav>
-
-        <a href="home.html" class="link"><img src="../src/logo.png" alt=""></a>
+        <div class="menu-responsive-header">
+            <div id="cancel" class="icono">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="home.html" class="link"><img src="../src/logo.png" alt=""></a>
+        </div>
 
         <div class="menu">
             <a href="hacemos.html" class="link" style="text-decoration:underline">QUÉ HACEMOS</a>
@@ -24,7 +28,8 @@
 
     </nav>
 
-    <div class="copa-white"><img src="../src/copa-red.png" alt="img-copa"></div>
+    <div id="desktop" class="copa-white"><img src="../src/copa-red.png" alt="img-copa"></div>
+    <div id="movile" class="copa-white"><img src="../src/copa-red.png" alt="img-copa"></div>
     <div id="btn-round"><a href="productos.html"><img src="../src/btn-round.png" alt=""></a></div>
     
     <!--     QUE HACEMOS    -->
@@ -46,10 +51,13 @@
                     y distribución de los productos en México.
                 </p>
             </div>
+            <div class="que-hacemos-img-bottom">
+                <img src="../src/botella-mesa-de-trabajo.png" alt="">
+            </div>
         </section>
         <!--     VISION    -->
         <section id="vision">
-            <div class="contenedor-img"><img src="../src/img/Imagen-03.png" alt=""></div>
+            <div class="contenedor-img img-botella-azul back-img"></div>
             <div class="text-50">
                 <div class="text-35">
                     <span>VISIÓN</span><br>
@@ -76,10 +84,13 @@
                 </p>
                 </div>
             </div>
-            <div class="contenedor-img"><img src="../src/img/Imagen2-03.png" alt=""></div>
+            <div class="contenedor-img img-camion-rojo back-img"></div>
+        </section>
+        <section class="img-responsive-botella back-img-responsive">
         </section>
     </div>
-    
+    <script src="https://kit.fontawesome.com/977a02dee3.js" crossorigin="anonymous"></script>
     <script src="../eventos.js"></script>
+    <script src="../eventos-responsive-general.js"></script>
 </body>
 </html>

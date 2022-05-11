@@ -1,11 +1,8 @@
 /* /// * MENU DESPLEGABLE  *  // */
 
-const botonCopa = document.querySelector('.copa-white');
+const botonCopa = document.querySelector('#desktop');
 const botonRound = document.querySelector('#btn-round');
 const nave = document.querySelector('nav');
-
-/* nave.nave.style.top = '-200px'; */
-
 
 botonCopa.addEventListener('click', ()=> {
 
@@ -20,10 +17,12 @@ botonCopa.addEventListener('click', ()=> {
     }
     
     if(posicionTop > '0'){
-        nave.style.top = '-200px';
+        nave.style.top = '-300px';
         botonCopa.style.top='4rem';
     }
 })
+
+
 
 
 

@@ -13,11 +13,16 @@
 </head>
 <body>
     <section>
+        
         <menu>
-
-            <a href="home.html" class="link"><img src="../src/logo.png" alt=""></a>
+            <div class="menu-responsive-header">
+                <div id="hamburguer" class="icono">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </div>
+                <a href="home.html" class="link"><img src="../src/logo.png" alt=""></a>
+            </div>
             
-            <div class="menu">
+            <div class="menu menu-responsive-link no-vision">
                 <a href="hacemos.html" class="link">QUÉ HACEMOS</a>
                 <a href="bodega.html" class="link">BODEGA</a>
                 <a href="productos.html" class="link">PRODUCTOS</a>
@@ -25,39 +30,42 @@
             </div>
     
         </menu>
+
     </section>
     <div id="btn-round"><a href="productos.html"><img src="../src/BotomCompra_Mesa.png" alt=""></a></div>
 <!--     LANDING    -->
     <section id="landing">
         <div id="png" class="img-first"><img src="../src/botella-mesa-de-trabajo.png" alt=""></div>
-        <div class="contenedor-img">
+        <div class="contenedor-img contenedor-slider">
             <div class="splide">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="../src/img/Foto1-01.png" alt="">
+                            <div class="img-hombre-rojo back-img-responsive"></div>
                         </li>
                         <li class="splide__slide">
-                            <img src="../src/img/Foto2-01.png" alt="">
+                            <div class="img-hombre-amarillo back-img-responsive"></div>
                         </li>
                         <li class="splide__slide">
-                            <img src="../src/img/Foto3-01.png" alt="">
+                            <div class="img-botella-roja back-img-responsive"></div>
                         </li>
                         <li class="splide__slide">
-                            <img src="../src/img/Foto4-01.png" alt="">
+                            <div class="img-botellas-amarillas back-img-responsive"></div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+    <script src="https://kit.fontawesome.com/977a02dee3.js" crossorigin="anonymous"></script>
     <script src="../splide.min.js"></script>
+    <script src="../eventos-responsive.js"></script>
     <script>
 
     var splide = new Splide('.splide', {
             direction: 'ttb',
             height: '100vh',
-            wheel: true,
+            wheel: false,
             type: 'loop',
             pagination: false,
             autoplay    : true,
