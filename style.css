@@ -665,7 +665,7 @@ section .contenedor-img img{
         }
         .copa-white{
             left: 9%;
-            top: 3%;
+            top: 4vh;
         }
         .copa-white img{
             width: 10vw !important;
