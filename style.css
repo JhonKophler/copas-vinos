@@ -20,7 +20,19 @@ html{
 }
 /* MAYORIA DE EDAD */
 
+.fondo-rojo{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--rojo);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .box-question{
+    width: 75vw;
+    height: 75vh; 
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -30,8 +42,8 @@ html{
 
 .box-question-one{
     background-color: var(--naranja);
-    width: 50vw;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     float: left;
     display: flex;
     flex-direction: column;
@@ -42,36 +54,49 @@ html{
 
 .box-question-two{
     background-color: var(--azul);
-    width:100%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .box-question-three{
     background-color: var(--verde);
-    width:100%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 .answer{
-    width: 50vw;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     user-select: none;
 }
 .text-question{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: var(--azul);
-    display: flex;
-    justify-content: center;
     font-size: 85px;
 }
 .yes, .no{
     font-family: 'Noto Serif Display', serif !important;
     font-style: italic;
     font-weight: 400;
-    margin: auto;  
     font-size: 85px;  
     display: flex;
     align-items: center;
     justify-content: center;    
     cursor: pointer;  
-    height: 50vh;
-    width: 50vhw;
 }
 .yes{
     color: var(--rojo);
@@ -84,7 +109,6 @@ html{
     background-color: var(--verde);
     border:var(--verde);
 }
-
 
 /* THE END MAYORIA DE EDAD */
 
@@ -582,15 +606,22 @@ section .contenedor-img img{
         }
         .box-question{
             flex-direction: column;
+            width: 100vw;
+            height: 100vh;
         }
         .box-question-one{
             width: 100vw;
-            height: 50vh;
+            height: 100vh;
         }
         .answer{
             display: flex;
-            flex-direction: arrow;
+            flex-direction: row;
             width: 100vw;
+            height: 100%;
+        }
+        .box-question-two,.box-question-three{
+            width: 100%;
+            height: 100%;
         }
         .tamanio{
             width: 50%;
