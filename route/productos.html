@@ -50,11 +50,11 @@
     <section id="vino" class="vino-container" style="background-color:var(--naranja);">
         <div class="vino-title" style="color:var(--azul);">
             <span style="font-weight: bolder;">CARBÓN</span>
-            <a class="parentesis" href="#" style="color:var(--azul);">ver más</a>
+            <a id="more" class="parentesis" style="color:var(--azul);">ver más</a>
         </div>
         <div class="img-vino">
             <img src="../src/img/vinos/vino-carbon.png" alt="">
-            <a class="parentesis" href="#" style="color:var(--naranja);">comprar</a>
+            <a id="buy" class="parentesis" style="color:var(--naranja);">comprar</a>
             <h4 class="parentesis" style="color:var(--naranja);">evita el exceso</h4>
         </div>
     </section>
@@ -62,14 +62,18 @@
 
     <!-- LA VACA ARGENTINA -->
     <section class="vino-container" style="background-color:var(--rojo);">
+        <div class="vino-title oculto-desktop" style="color:var(--azul);text-align:left;">
+            <span style="font-weight: bolder;">LA VACA<br>ARGENTINA</span>
+            <a id="more" class="parentesis"  style="color:var(--azul);">ver más</a>
+        </div>
         <div class="img-vino">
             <img src="../src/img/vinos/vino-vaca.png" alt="">
-            <a class="parentesis" href="#" style="color:var(--rojo);">comprar</a>
+            <a id="buy" class="parentesis"  style="color:var(--rojo);">comprar</a>
             <h4 class="parentesis" style="color:var(--rojo);">evita el exceso</h4>
         </div>
-        <div class="vino-title" style="color:var(--azul);text-align:left;">
+        <div class="vino-title oculto-responsive" style="color:var(--azul);text-align:left;">
             <span style="font-weight: bolder;">LA<br>VACA<br>ARGENTINA</span>
-            <a class="parentesis" href="#" style="color:var(--azul);">ver más</a>
+            <a id="more" class="parentesis" style="color:var(--azul);">ver más</a>
         </div>
         
     </section>
@@ -79,29 +83,30 @@
     <section class="vino-container" style="background-color:var(--azul);">
         <div class="vino-title" style="color:var(--naranja);">
             <span style="font-weight: bolder;">CHAMUYO</span>
-            <a class="parentesis" href="#" style="color:var(--naranja);">ver más</a>
+            <a id="more" class="parentesis"  style="color:var(--naranja);">ver más</a>
         </div>
         <div class="img-vino">
             <img src="../src/img/vinos/vino-santonegro.png" alt="">
-            <a class="parentesis" href="#" style="color:var(--azul);">comprar</a>
+            <a id="buy" class="parentesis" style="color:var(--azul);">comprar</a>
             <h4 class="parentesis" style="color:var(--azul);">evita el exceso</h4>
         </div>
     </section>
 
 
     <!-- NUEVE MUSAS -->
-    <section class="vino-container" style="background-color:var(--naranja);">
+    <section class="vino-container musas-responsive" style="background-color:var(--naranja);">
         <div class="img-vino" style="background-color:var(--verde)!important;">
             <img src="../src/Botellita-Mesa.png" alt="">
         </div>
         <div class="vino-title" style="color:var(--azul);padding: 0!important;">
             <span style="font-weight: bolder;">PROXIMAMENTE</span>
-            <span class="parentesis" href="#" style="color:var(--azul);font-size: 4vw!important;">NUEVE MUSAS</span>
+            <span class="parentesis" style="color:var(--azul);font-size: 4vw!important;">NUEVE MUSAS</span>
         </div>    
     </section>
 
     <script src="https://kit.fontawesome.com/977a02dee3.js" crossorigin="anonymous"></script>
     <script src="../eventos.js"></script>
+    <script src="../evento-compra.js"></script>
     <script src="../eventos-responsive-general.js"></script>
 </body>
 </html>

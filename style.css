@@ -406,6 +406,9 @@ section .contenedor-img img{
     padding: 5%;
 
 }
+.oculto-desktop{
+    display: none!important;
+}
 .vino-container a{
     text-decoration:none;
     font-size: 3vw;
@@ -781,12 +784,24 @@ section .contenedor-img img{
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+        }
+        .vino-container span{
+            font-size: 2rem;
         }
         .vino-title{
             width: 100%;
             height: 20%;
             padding:0;
             color: var(--azul)!important;
+        }
+        .oculto-desktop{
+            display: flex!important;
+            align-items: center;
+            text-align: center!important;
+        }
+        .oculto-responsive{
+            display: none;
         }
         .vino-title a,.img-vino a,.img-vino h4{
             color: var(--azul)!important;
@@ -799,6 +814,12 @@ section .contenedor-img img{
         }
         .img-vino h4{
             font-size: 4vw;
+        }
+        .musas-responsive{
+            background-color: var(--verde)!important;
+        }
+        .musas-responsive span{
+            color: var(--blanco)!important;
         }
 
         /* CONTACTANOS */
