@@ -344,7 +344,7 @@ section .contenedor-img img{
     background-image: url('../src/img/Imagen3-03.png');
 }
 .img-santonegro-bodega{
-    background-image: url('../src/img/Imagen4-03.png');
+    background-image: url('../src/img/bodega.png');
 }
 .img-santonegro-logo .clickeable-santonegro{
     width: 100vw;
@@ -382,7 +382,9 @@ section .contenedor-img img{
 .bodega-text{
     width: 50%;
 }
-
+.logo-sn-responsive{
+    display:none;
+}
 /* END BODEGA */
 
 
@@ -771,6 +773,16 @@ section .contenedor-img img{
         }
         .bodega-text{
             width: 80%;
+        }
+       
+        .logo-sn-responsive{
+            display: flex;
+            justify-content:center;
+            position: relative;
+            top: 10vh;
+        }
+        .logo-sn-responsive img{
+            width: 26rem;
         }
         .back-img-responsive{
             background-repeat: no-repeat;
