@@ -426,18 +426,44 @@ section .contenedor-img img{
     width: 50%;
 }
 .img-vino a{
+    cursor: pointer;
     font-size: 3vw;
+}
+.vino-container a:hover, .img-vino a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .img-vino h4{
     text-transform:lowercase;
     font-size: 1.5vw;
-    padding: 3vw;
+}
+.botones-compra-vino{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-oculto{
+    display: none;
+}
+.botones-compra-vino img{
+    width: 25%;
+    padding: 1rem;
+}
+.grupo-botones-compra{
+    display: flex;
+    justify-content: center;
+}
+.cancelar-compra i{
+    font-size:  2em;
+    color: var(--verde);
+    cursor: pointer;
+    position:relative;
 }
 
-
 /* BUTTON DE PRODUCT */
-
-
 #btn-round img{
     width: 13% ;
     position: fixed;
@@ -802,6 +828,9 @@ section .contenedor-img img{
         }
         .oculto-responsive{
             display: none;
+        }
+        .botones-compra-vino{
+            width: 50%;
         }
         .vino-title a,.img-vino a,.img-vino h4{
             color: var(--azul)!important;
