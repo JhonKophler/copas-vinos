@@ -389,59 +389,7 @@ section .contenedor-img img{
 
 
 /* PRODUCTOS */
-.productos{
-    background-color: var(--rojo);
-    width: 100%;
-    height: 500px;
-}
-#png-brown{
-    background-color: var(--naranja);
-    display: flex;
-    flex-direction: column;
-}
-#landing ,
-#png-orange{
-    background-color: var(--rojo);
-}
-#png-blue{
-    background-color: var(--azul);
 
-}
-.img-botella-carbon{
-    background-image: url('../src/img/VINOS-05.png');
-}
-.wine-carb , 
-.wine-vaca ,
-.wine-negro ,
-.wine-prox{
-    color:var(--azul);
-    font-size:6vw!important;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-}
-.wine-negro{
-    color: var(--naranja);
-}
-.vm-carb{
-    color: var(--azul);
-}
-.vm-vaca {
-    color: var(--azul);
-    margin-right: auto;
-}
-.vm-negro{
-    color: var(--naranja);
-    margin-right: auto;
-}
-.wine-prox{
-    font-size:5vw!important;
-    color: var(--blanco);
-}
-.wine-prox span{
-    font-size: .8em;
-}
 /* BUTTON DE PRODUCT */
 
 
@@ -456,14 +404,6 @@ section .contenedor-img img{
     z-index: 20;
 }
 
-#landing .btn-round-product{
-    width: 2px ;
-    position: fixed;
-    animation: 20s rotate linear infinite;
-    transform-origin: 50% 50%;
-    overflow: hidden;
-    z-index: 20;
-}
 
 @keyframes rotate {
     from {transform: rotate(0deg);}
@@ -497,12 +437,18 @@ section .contenedor-img img{
 
 .contact{
     background-color: var(--verde) !important;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .box-contact{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0 15% 0 ;
+    margin: 15% 0 20% 0 ;
 }
 
 .yellow{
@@ -537,6 +483,8 @@ section .contenedor-img img{
 }
 
 .confidencial{
+    position: absolute;
+    bottom: 1%;
     width: 90%;
     font-size: .8vw;
     text-align: justify;
@@ -785,15 +733,14 @@ section .contenedor-img img{
             height: 100vh;
         }
         /* CONTACTANOS */
-        .contact{
-            display: flex !important;
-            justify-content: space-evenly !important;
+        .box-contact{
+            margin: 25% 0 20% 0 ;
         }
         .net{
             font-size:4vw;
         }
         .confidencial{
-            width: 110%;
+            width: 90%;
             font-size:2vw;
         }
 
