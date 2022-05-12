@@ -389,6 +389,48 @@ section .contenedor-img img{
 
 
 /* PRODUCTOS */
+.vino-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.vino-title{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-weight: 900!important;
+    padding: 5%;
+
+}
+.vino-container a{
+    text-decoration:none;
+    font-size: 3vw;
+    text-transform:lowercase;
+}
+.img-vino{
+    width: 50vw;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-vino img{
+    width: 50%;
+}
+.img-vino a{
+    font-size: 3vw;
+}
+.img-vino h4{
+    text-transform:lowercase;
+    font-size: 1.5vw;
+    padding: 3vw;
+}
+
 
 /* BUTTON DE PRODUCT */
 
@@ -540,7 +582,7 @@ section .contenedor-img img{
 
  /* MEDIA QUERIES */
 
-    @media (max-width: 890px) {
+    @media (max-width: 890px){
         .font-query h2,.font-query div{
             font-size: 6vw;
         }
@@ -732,6 +774,33 @@ section .contenedor-img img{
             width: 100%;
             height: 100vh;
         }
+
+        /* PRODUCTOS */
+        .vino-container{
+            background-color: var(--blanco)!important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .vino-title{
+            width: 100%;
+            height: 20%;
+            padding:0;
+            color: var(--azul)!important;
+        }
+        .vino-title a,.img-vino a,.img-vino h4{
+            color: var(--azul)!important;
+        }
+        .img-vino img{
+            width: 100%;
+        }
+        .img-vino a{
+            font-size: 3rem;
+        }
+        .img-vino h4{
+            font-size: 4vw;
+        }
+
         /* CONTACTANOS */
         .box-contact{
             margin: 25% 0 20% 0 ;
