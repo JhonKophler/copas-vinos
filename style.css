@@ -404,7 +404,32 @@ section .contenedor-img img{
     justify-content: center;
     font-weight: 900!important;
     padding: 5%;
-
+    position: relative;
+}
+.vino-title span{
+    opacity: 1;
+}
+.vino-title p{
+    transition: all 0.5s;
+    margin: 0;
+    z-index: -1;
+    opacity: 0;
+    line-height: 3vw;
+    font-size: 3vw;
+    position: absolute;
+    color: var(--blanco);
+    width: 80%;
+}
+.mostrar-description{
+    opacity: 1!important;
+    z-index: 30!important;
+}
+.ocultar-title{
+    opacity: 0!important;
+}
+.mover-more{
+    position: absolute;
+    bottom: 5vh;
 }
 .oculto-desktop{
     display: none!important;
@@ -453,8 +478,12 @@ section .contenedor-img img{
     padding: 1rem;
 }
 .grupo-botones-compra{
-    display: flex;
-    justify-content: center;
+    text-align: center !important;
+}
+.grupo-botones-compra a{
+    text-decoration: none !important;
+    color: var(--blanco);
+    margin: auto;
 }
 .cancelar-compra i{
     font-size:  2em;
@@ -821,6 +850,12 @@ section .contenedor-img img{
             padding:0;
             color: var(--azul)!important;
         }
+        .vino-title p {
+            background-color: var(--verde);
+        }
+        .mover-more{
+            bottom: 0;
+        }
         .oculto-desktop{
             display: flex!important;
             align-items: center;
@@ -828,6 +863,14 @@ section .contenedor-img img{
         }
         .oculto-responsive{
             display: none;
+        }
+        .grupo-botones-compra{
+            display: flex;
+            flex-direction: row;
+        }
+        .grupo-botones-compra a {
+            width: 10rem;
+            margin: .5rem;
         }
         .botones-compra-vino{
             width: 50%;
