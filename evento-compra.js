@@ -5,41 +5,39 @@ const cancelCompra = document.querySelectorAll('.cancelar-compra');
 
 /* BOTON COMPRA CARBON */
 compra[0].addEventListener('click',()=>{
-    textoCompra[0].style.display = 'none';
-    textoCompra[1].style.display = 'none';
-    imgBtn[0].classList.remove('btn-oculto');
+    ocultar(0,1,0);
 });
 
 cancelCompra[0].addEventListener('click',()=>{
-    textoCompra[0].style.display = 'flex';
-    textoCompra[1].style.display = 'flex';
-    imgBtn[0].classList.add('btn-oculto');
+    mostrar(0,1,0);
 }); 
-
 
 /* BOTON COMPRA LA VACA ARGENTINA */
 compra[1].addEventListener('click',()=>{
-    textoCompra[2].style.display = 'none';
-    textoCompra[3].style.display = 'none';
-    imgBtn[1].classList.remove('btn-oculto');
-
+    ocultar(2,3,1);
 });
 cancelCompra[1].addEventListener('click',()=>{
-    textoCompra[2].style.display = 'flex';
-    textoCompra[3].style.display = 'flex';
-    imgBtn[1].classList.add('btn-oculto');
+    mostrar(2,3,1);
 }); 
 
-
-/* BOTON COMPRA CHAMUYO */
+/* BOTON COMPRA SANTONEGRO */
 compra[2].addEventListener('click',()=>{
-    textoCompra[4].style.display = 'none';
-    textoCompra[5].style.display = 'none';
-    imgBtn[2].classList.remove('btn-oculto');
-
+    ocultar(4,5,2);
 });
 cancelCompra[2].addEventListener('click',()=>{
-    textoCompra[4].style.display = 'flex';
-    textoCompra[5].style.display = 'flex';
-    imgBtn[2].classList.add('btn-oculto');
+    mostrar(4,5,2);
 }); 
+
+/* ---------------- --------------------------------------------------*/
+
+function mostrar(n,m,o){
+    textoCompra[n].style.display = 'flex';
+    textoCompra[m].style.display = 'flex';
+    imgBtn[o].classList.add('btn-oculto');
+}
+
+function ocultar(n,m,o){
+    textoCompra[n].style.display = 'none';
+    textoCompra[m].style.display = 'none';
+    imgBtn[o].classList.remove('btn-oculto');
+};

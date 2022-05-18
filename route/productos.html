@@ -34,7 +34,7 @@
 
     <div id="desktop" class="copa-white"><img src="../src/copa-white.png" alt="img-copa"></div>
     <div id="movile" class="copa-white"><img src="../src/copa-white.png" alt="img-copa"></div>
-    <div id="btn-round"><a href="#vino"><img src="../src/BotomCompra_Mesa.png" alt=""></a></div>
+    <!-- <div id="btn-round"><a href="#vino"><img src="../src/BotomCompra_Mesa.png" alt=""></a></div> -->
     <!--     PRODUCTOS    -->
     <section id="que-hacemos" style="background-color:var(--rojo);">
         <div class="quienes-somos">
@@ -42,7 +42,7 @@
             <span class="parentesis">(RICOS VINOS)</span>
             <p>
                 A través de nuestros socios comerciales llegamos a tu mesa con tan solo un click.
-                PUEDES ELEGIR, PAGAR y RECIBIR tu pedido sin moverte de tu casa
+                PUEDES ELEGIR, PAGAR y RECIBIR tu pedido sin moverte de tu casa.
             </p>
         </div>
     </section>
@@ -84,15 +84,18 @@
 
 
         <!-- LA VACA ARGENTINA -->
-        <section class="vino-container" style="background-color:var(--rojo);">
-            <div class="vino-title oculto-desktop" style="color:var(--azul);text-align:left;">
-            <span style="font-weight: bolder;">LA VACA<br>ARGENTINA</span>
-            <a class="parentesis more"  style="color:var(--azul);" >ver más</a>
-            <p class="description"> 
-                MALBEC ARMONIOSO CON ESTRUCTURA Y BUEN PASO POR BOCA, DELICADO. UNA EXPRESIÓN DE NUESTROS MEJORES VIÑEDOS AL SUR DE MENDOZA. UN VINO QUE REPRESENTA FIELMENTE NUESTRA TRADICIÓN EN LA ELABORACIÓN DE MALBECS.
-            </p>
-        </div>
-            <div class="img-vino">
+        <section id="vaca" class="vino-container" style="background-color:var(--rojo);">
+            <!-- Movile -->
+            <div class="vino-title oculto-desktop movilVino" style="color:var(--azul);text-align:left;">
+                <span class="title-vakita-movile" style="font-weight: bolder;">LA VACA ARGENTINA</span>
+                <a class="parentesis more more-vakita-movile" style="color:var(--azul);">ver más</a>
+                <p class="description description-vakita-movile">
+                    MALBEC ARMONIOSO CON ESTRUCTURA Y BUEN PASO POR BOCA, DELICADO. UNA EXPRESIÓN DE NUESTROS MEJORES VIÑEDOS AL
+                    SUR DE MENDOZA. UN VINO QUE REPRESENTA FIELMENTE NUESTRA TRADICIÓN EN LA ELABORACIÓN DE MALBECS.
+                </p>
+            </div>;
+            <!-- Vino contenedor -->
+            <div  class="img-vino">
                 <img src="../src/img/vinos/vino-vaca.png" alt="">
                 <a id="buy" class="parentesis texto-compra" style="color:var(--rojo);">comprar</a>
                 <div class="botones-compra-vino btn-oculto">
@@ -100,19 +103,18 @@
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                     <div class="grupo-botones-compra ">
-                        <a href="https://www.amazon.com.mx/dp/B09FFVP6JP/ref=cm_sw_r_wa_api_i_6AGDY1KXX33STJ12EVWA"
-                            target="_blank">
+                        <a href="https://www.amazon.com.mx/dp/B09FFVP6JP/ref=cm_sw_r_wa_api_i_6AGDY1KXX33STJ12EVWA" target="_blank">
                             <img style="background-color: var(--azul);" src="../src/img/logo-compra/logoamazon.png">
                         </a>
-                        <!-- <img style="background-color: var(--rojo);"src="../src/img/logo-compra/LogoLaPlaya.png"> -->
                     </div>
                 </div>
                 <h4 class="parentesis texto-compra" style="color:var(--rojo);">evita el exceso</h4>
             </div>
-            <div class="vino-title oculto-responsive" style="color:var(--azul);text-align:left;">
-                <span style="font-weight: bolder;">LA<br>VACA<br>ARGENTINA</span>
-                <a class="parentesis more" style="color:var(--azul);">ver más</a>
-                <p class="description">
+            <!-- desktop -->
+            <div class="vino-title oculto-responsive desktopVino" style="color:var(--azul);text-align:left;">
+                <span class="title-vakita-desktop" style="font-weight: bolder;">LA<br>VACA<br>ARGENTINA</span>
+                <a class="parentesis more more-vakita-desktop" style="color:var(--azul);">ver más</a>
+                <p class="description description-vakita-desktop">
                     MALBEC ARMONIOSO CON ESTRUCTURA Y BUEN PASO POR BOCA, DELICADO. UNA EXPRESIÓN DE NUESTROS MEJORES
                     VIÑEDOS AL SUR DE MENDOZA. UN VINO QUE REPRESENTA FIELMENTE NUESTRA TRADICIÓN EN LA ELABORACIÓN DE
                     MALBECS.
