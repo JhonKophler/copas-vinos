@@ -906,10 +906,10 @@ section .contenedor-img img{
             align-items: center;
             position: relative;
         }
-        .naranja{
+        .fondo-naranja{
             background-color: var(--naranja)!important;
         }
-        .red{
+        .fondo-red{
             background-color: var(--rojo)!important;
         }
         .mover-more{
