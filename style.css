@@ -640,7 +640,7 @@ section .contenedor-img img{
 
  /* MEDIA QUERIES */
 
-    @media (max-width: 890px){
+    @media (max-width: 780px){
         .font-query h2,.font-query div{
             font-size: 6vw;
         }
@@ -849,6 +849,9 @@ section .contenedor-img img{
             height: 20%;
             padding:0;
             color: var(--azul)!important;
+            display: flex;
+            align-items: center;
+            margin-bottom: -5%;
         }
         .vino-title p {
             background-color: var(--verde);
@@ -892,6 +895,25 @@ section .contenedor-img img{
         }
         .musas-responsive span{
             color: var(--blanco)!important;
+        }
+        .description-movile-vinos{
+            font-size: 2.5vh !important;
+            line-height: 3vh !important;
+            top: 50%;
+            height: 70vh;  
+            display: flex;
+            padding: 3rem;
+            align-items: center;
+            position: relative;
+        }
+        .naranja{
+            background-color: var(--naranja)!important;
+        }
+        .red{
+            background-color: var(--rojo)!important;
+        }
+        .mover-more{
+            z-index: 40;
         }
 
         /* CONTACTANOS */
