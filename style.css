@@ -415,7 +415,7 @@ section .contenedor-img img{
     z-index: -1;
     opacity: 0;
     line-height: 3vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
     position: absolute;
     color: var(--blanco);
     width: 80%;
@@ -428,15 +428,22 @@ section .contenedor-img img{
     opacity: 0!important;
 }
 .mover-more{
+    z-index: 40;
     position: absolute;
     bottom: 5vh;
+}
+.mover-title{
+    position: absolute;
+    z-index: 40;
+    bottom: 7vh;
+    font-size: 3rem;
 }
 .oculto-desktop{
     display: none!important;
 }
 .vino-container a{
     text-decoration:none;
-    font-size: 3vw;
+    font-size: 2.4rem;
     text-transform:lowercase;
 }
 .img-vino{
@@ -640,7 +647,7 @@ section .contenedor-img img{
 
  /* MEDIA QUERIES */
 
-    @media (max-width: 780px){
+    @media (max-width: 720px){
         .font-query h2,.font-query div{
             font-size: 6vw;
         }
@@ -899,7 +906,8 @@ section .contenedor-img img{
         .description-movile-vinos{
             font-size: 2.5vh !important;
             line-height: 3vh !important;
-            top: 50%;
+            top: 5vh;
+            width: 100%!important;
             height: 70vh;  
             display: flex;
             padding: 3rem;
