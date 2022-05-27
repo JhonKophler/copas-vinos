@@ -14,10 +14,6 @@
     --rojo: #ff4713 ;
     --blanco: #f4f2e3;
 }
-
-html{
-    scroll-behavior: smooth;
-}
 /* MAYORIA DE EDAD */
 
 .fondo-rojo{
@@ -180,8 +176,10 @@ menu .menu{
 }
 
 section{
-    scroll-snap-align: start;
     color: var(--blanco);
+}
+#scroll{
+    scroll-snap-align: start;
 }
 
 #landing{
