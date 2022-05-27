@@ -5,7 +5,7 @@
     font-size: 13px;
     text-transform: uppercase;
     user-select: none;
-    /* scroll-snap-type: y mandatory; */
+    scroll-snap-type: y mandatory;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     --verde:#001A15;
@@ -176,7 +176,7 @@ menu .menu{
 }
 
 section{
-    /* scroll-snap-align: center; */
+    scroll-snap-align: center;
     color: var(--blanco);
 }
 
