@@ -264,11 +264,14 @@ section{
     overflow: hidden;
     z-index: 20;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .copa ,
 .copa-white img{
-    width: 8em !important;
+    width: 6em !important;
 }
 
 #movile{
@@ -281,7 +284,7 @@ section{
 div p{
     text-align: justify;
     margin-top: 5vw;
-    font-size: 1.5vw;
+    font-size: 1.8em;
     word-spacing: 7px;
     line-height: 2rem;
 }
@@ -327,6 +330,9 @@ section .contenedor-img img{
 }
 .img-botellas-amarillas{
     background-image: url('../src/img/Foto4-01.png');
+}
+.img-botellas-vaca{
+    background-image: url('../src/img/la-vaca.png');
 }
 /* FIN SLIDER */
 
@@ -438,6 +444,9 @@ section .contenedor-img img{
     bottom: 7vh;
     font-size: 3rem;
 }
+.color-letra-blanca{
+    color: var(--blanco)!important;
+}
 .oculto-desktop{
     display: none!important;
 }
@@ -497,6 +506,14 @@ section .contenedor-img img{
     color: var(--verde);
     cursor: pointer;
     position:relative;
+}
+.desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movile{
+    display: none;
 }
 
 /* BUTTON DE PRODUCT */
@@ -593,7 +610,7 @@ section .contenedor-img img{
     position: absolute;
     bottom: 1%;
     width: 90%;
-    font-size: .8vw;
+    font-size: 1em;
     text-align: justify;
 }
 
@@ -647,293 +664,307 @@ section .contenedor-img img{
 
  /* MEDIA QUERIES */
 
-    @media (max-width: 720px){
-        .font-query h2,.font-query div{
-            font-size: 6vw;
-        }
-        .font-query span{
-            font-size: 4vw;
-        }
-        .box-question{
-            flex-direction: column;
-            width: 100vw;
-            height: 100vh;
-        }
-        .box-question-one{
-            width: 100vw;
-            height: 100vh;
-        }
-        .answer{
-            display: flex;
-            flex-direction: row;
-            width: 100vw;
-            height: 100%;
-        }
-        .box-question-two,.box-question-three{
-            width: 100%;
-            height: 100%;
-        }
-        .tamanio{
-            width: 50%;
-        }
-        .denegado img{
-            width: 35%;
-            right: 32.5%;
-        }
-        /* MENU RESPONSIVE home*/
-        
-        menu{
-            position: absolute;
-            flex-direction: column;
-            text-align: center;
-            z-index: 20;
-        }
-        menu img{
-            width: 30vw;
-        }
-        .menu{
-            padding:0 !important;
-        }
-        .menu-responsive-header{
-            display: flex;
-            align-items: center;
-        }
-        .menu-responsive-link{
-           flex-direction: column !important; 
-        }
-        .menu-responsive-link a{
-            font-size: 120% !important;
-            padding: 2vw 0;
-        }
-        .icono{
-            display: block;
-            color: #001A15 ;
-            z-index: 40;
-            position: absolute;
-            left: 10%;
-        }
-        .icono:hover{
-            cursor: pointer;
-        }
-        .icono i{
-            font-size: 3rem;
-        }
-
-        #btn-round img{
-            width: 30%;
-            right: 2%;
-            top: 7%;
-        }
-
-        #landing .img-first{
-            display: none;
-        }
-        .contenedor-slider{
-            display: inline!important;
-            width: 100vw;
-        }
-        #landing img{
-            width: 100vw;
-        }
-
-        .no-vision{
-            height: 0 !important; ;
-            transition: all .5s;
-            opacity: 0;
-        }
-        .vision{
-            padding: 5vw 0 !important;
-            height: 30vh !important; ;
-            transition: all .5s;
-            opacity: 1;
-        }
-
-         /* END MENU RESPONSIVE home */
-
-        /* MENU RESPONSIVE GENERAL */
-        #desktop{
-            display: none;
-        }
-        #movile{
-            display: inline;
-        }
-        .copa-white{
-            left: 9%;
-            top: 4vh;
-        }
-        .copa-white img{
-            width: 10vw !important;
-        }
-        nav{
-            top: -300px;
-        }
-        nav,nav .menu{
-            flex-direction: column;
-            text-align: center;
-        }
-        nav img{
-            width: 20vw;
-        }
-
-        nav .link{
-            padding: .4rem 0;
-        }
-        /* END MENU RESPONSIVE */
-
-        /* HACEMOS */
-        span{
-            font-size: 7vw;
-        }
-        .quienes-somos{
-            width: 90%;
-        }
-        .text-50,.text-35{
-            width: 95%;
-        }
-        div p{
-            margin-top: 4.5vh;
-            font-size: 3vw;
-            line-height: 3vh;
-        }
-        
-        .contenedor-img{
-            display:none;
-        }
-        .que-hacemos-img-bottom{
-            display:inline !important;  
-        }
-        .que-hacemos-img-bottom img{
-            position: absolute;
-            bottom: 2vh;
-            left: 40%;
-            width: 20vw; 
-        }
-        .img-responsive-botella{
-            background-image: url('../src/img/Imagen-03.png');
-        }
-        /* BODEGA */
-        #png-brown{
-            display: none;
-        }
-        #bodega{
-            width: 100%; 
-            display: inline;
-        }
-        .bodega-text{
-            width: 80%;
-        }
-       
-        .logo-sn-responsive{
-            display: flex;
-            justify-content:center;
-            position: relative;
-            top: 10vh;
-        }
-        .logo-sn-responsive img{
-            width: 12rem;
-        }
-        .back-img-responsive{
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            width: 100%;
-            height: 100vh;
-        }
-
-        /* PRODUCTOS */
-        .vino-container{
-            background-color: var(--blanco)!important;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .vino-container span{
-            font-size: 2rem;
-        }
-        .vino-title{
-            width: 100%;
-            height: 20%;
-            padding:0;
-            color: var(--azul)!important;
-            display: flex;
-            align-items: center;
-            margin-bottom: -5%;
-        }
-        .vino-title p {
-            background-color: var(--verde);
-        }
-        .mover-more{
-            bottom: 0;
-        }
-        .oculto-desktop{
-            display: flex!important;
-            align-items: center;
-            text-align: center!important;
-        }
-        .oculto-responsive{
-            display: none;
-        }
-        .grupo-botones-compra{
-            display: flex;
-            flex-direction: row;
-        }
-        .grupo-botones-compra a {
-            width: 10rem;
-            margin: .5rem;
-        }
-        .botones-compra-vino{
-            width: 50%;
-        }
-        .vino-title a,.img-vino a,.img-vino h4{
-            color: var(--azul)!important;
-        }
-        .img-vino img{
-            width: 100%;
-        }
-        .img-vino a{
-            font-size: 3rem;
-        }
-        .img-vino h4{
-            font-size: 4vw;
-        }
-        .musas-responsive{
-            background-color: var(--verde)!important;
-        }
-        .musas-responsive span{
-            color: var(--blanco)!important;
-        }
-        .description-movile-vinos{
-            font-size: 2.5vh !important;
-            line-height: 3vh !important;
-            top: 5vh;
-            width: 100%!important;
-            height: 70vh;  
-            display: flex;
-            padding: 3rem;
-            align-items: center;
-            position: relative;
-        }
-        .fondo-naranja{
-            background-color: var(--naranja)!important;
-        }
-        .fondo-red{
-            background-color: var(--rojo)!important;
-        }
-        .mover-more{
-            z-index: 40;
-        }
-
-        /* CONTACTANOS */
-        .box-contact{
-            margin: 25% 0 20% 0 ;
-        }
-        .net{
-            font-size:4vw;
-        }
-        .confidencial{
-            width: 90%;
-            font-size:2vw;
-        }
-
+@media screen and (max-width: 800px){
+    body::-webkit-scrollbar {
+        display: none; /* width of the entire scrollbar */
+      }
+    .font-query h2,.font-query div{
+        font-size: 6vw;
     }
+    .font-query span{
+        font-size: 4vw;
+    }
+    .box-question{
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+    .box-question-one{
+        width: 100vw;
+        height: 100vh;
+    }
+    .answer{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 100%;
+    }
+    .box-question-two,.box-question-three{
+        width: 100%;
+        height: 100%;
+    }
+    .tamanio{
+        width: 50%;
+    }
+    .denegado img{
+        width: 35%;
+        right: 32.5%;
+    }
+    /* MENU RESPONSIVE home*/
+    
+    menu{
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        z-index: 20;
+    }
+    menu img{
+        width: 30vw;
+    }
+    .menu{
+        padding:0 !important;
+    }
+    .menu-responsive-header{
+        display: flex;
+        align-items: center;
+    }
+    .menu-responsive-link{
+       flex-direction: column !important; 
+    }
+    .menu-responsive-link a{
+        font-size: 120% !important;
+        padding: 2vw 0;
+    }
+    .icono{
+        display: block;
+        color: #001A15 ;
+        z-index: 40;
+        position: absolute;
+        left: 10%;
+    }
+    .icono:hover{
+        cursor: pointer;
+    }
+    .icono i{
+        font-size: 3rem;
+    }
+    #btn-round img{
+        width: 30%;
+        right: 2%;
+        top: 7%;
+    }
+    #landing .img-first{
+        display: none;
+    }
+    .contenedor-slider{
+        display: inline!important;
+        width: 100vw;
+    }
+    #landing img{
+        width: 100vw;
+    }
+    .no-vision{
+        height: 0 !important; ;
+        transition: all .5s;
+        opacity: 0;
+    }
+    .vision{
+        padding: 5vw 0 !important;
+        height: 30vh !important; ;
+        transition: all .5s;
+        opacity: 1;
+    }
+     /* END MENU RESPONSIVE home */
+    /* MENU RESPONSIVE GENERAL */
+    #desktop{
+        display: none;
+    }
+    #movile{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .copa-white{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        left: 9%;
+        top: 4vh;
+    }
+    .copa-white img{
+        width: 10vw !important;
+    }
+    nav{
+        top: -300px;
+    }
+    nav,nav .menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav img{
+        width: 20vw;
+    }
+    nav .link{
+        padding: .4rem 0;
+    }
+    /* END MENU RESPONSIVE */
+    /* HACEMOS */
+    span{
+        font-size: 7vw;
+    }
+    .quienes-somos{
+        width: 90%;
+    }
+    .text-50,.text-35{
+        width: 95%;
+    }
+    div p{
+        margin-top: 4.5vh;
+        font-size: 3.6vw;
+        line-height: 3vh;
+    }
+    
+    .contenedor-img{
+        display:none;
+    }
+    .que-hacemos-img-bottom{
+        display:inline !important;  
+    }
+    .que-hacemos-img-bottom img{
+        position: absolute;
+        bottom: 2vh;
+        left: 40%;
+        width: 20vw; 
+    }
+    .img-responsive-botella{
+        background-image: url('../src/img/Imagen-03.png');
+    }
+    /* BODEGA */
+    #png-brown{
+        display: none;
+    }
+    #bodega{
+        width: 100%; 
+        display: inline;
+    }
+    .bodega-text{
+        width: 80%;
+    }
+   
+    .logo-sn-responsive{
+        display: flex;
+        justify-content:center;
+        position: relative;
+        top: 10vh;
+    }
+    .logo-sn-responsive img{
+        width: 12rem;
+    }
+    .back-img-responsive{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+    /* PRODUCTOS */
+    .vino-container{
+        background-color: var(--blanco)!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .vino-container span{
+        font-size: 2rem;
+    }
+    .vino-title{
+        width: 100%;
+        height: 20%;
+        padding:0;
+        color: var(--azul)!important;
+        display: flex;
+        align-items: center;
+        margin-bottom: -5%;
+    }
+    .vino-title p {
+        background-color: var(--verde);
+    }
+    .mover-more{
+        bottom: 0;
+    }
+    .color-letra-blanca{
+        color: var(--blanco)!important;
+    }
+    .oculto-desktop{
+        display: flex!important;
+        align-items: center;
+        text-align: center!important;
+    }
+    .oculto-responsive{
+        display: none;
+    }
+    .grupo-botones-compra{
+        display: flex;
+        flex-direction: row;
+    }
+    .grupo-botones-compra a {
+        width: 10rem;
+        margin: .5rem;
+    }
+    .botones-compra-vino{
+        width: 50%;
+    }
+    .vino-title a,.img-vino a,.img-vino h4{
+        color: var(--azul)!important;
+    }
+    .img-vino img{
+        width: 100%;
+    }
+    .img-vino a{
+        font-size: 3rem;
+    }
+    .img-vino h4{
+        font-size: 4vw;
+    }
+    .musas-responsive{
+        background-color: var(--verde)!important;
+    }
+    .musas-responsive span{
+        color: var(--blanco)!important;
+    }
+    .background-none{
+        background-color: transparent!important;
+    }
+    .description-movile-vinos{
+        font-size: 2.5vh !important;
+        line-height: 3vh !important;
+        top: 5vh;
+        width: 100%!important;
+        height: 70vh;  
+        display: flex;
+        padding: 3rem;
+        align-items: center;
+        position: relative;
+    }
+    .fondo-naranja{
+        background-color: var(--naranja)!important;
+    }
+    .fondo-red{
+        background-color: var(--rojo)!important;
+    }
+    .mover-more{
+        bottom: 4em;
+        z-index: 40;
+    }
+    .more{
+        color: var(--blanco);
+    }
+    .desktop{
+        display: none;
+    }
+    .movile{
+        display: flex;
+    }
+    /* CONTACTANOS */
+    .box-contact{
+        margin: 25% 0 20% 0 ;
+    }
+    .net{
+        font-size:4vw;
+    }
+    .confidencial{
+        width: 90%;
+        font-size:.7em;
+    }
+}

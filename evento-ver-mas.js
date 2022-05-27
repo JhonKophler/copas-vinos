@@ -16,8 +16,10 @@ class ViewText {
 
             /* ACCIONES DE TEXTOS */
             title.classList.toggle('mover-title');
+            title.classList.toggle('color-letra-blanca');
             descripcion.classList.toggle('mostrar-description');
             verMas.classList.toggle('mover-more');
+            verMas.classList.toggle('color-letra-blanca');
             verMas.innerHTML == 'ver más' ? verMas.innerHTML = 'ver menos' : verMas.innerHTML = 'ver más';
         };
 
@@ -30,8 +32,10 @@ class ViewText {
             const descripcion = dataText.querySelector('.description-vakita-movile');
             /* ACCIONES DE TEXTOS */
             title.classList.toggle('mover-title');
+            title.classList.toggle('color-letra-blanca');
             descripcion.classList.toggle('mostrar-description');
             verMas.classList.toggle('mover-more');
+            verMas.classList.toggle('color-letra-blanca');
             verMas.innerHTML == 'ver más' ? verMas.innerHTML = 'ver menos' : verMas.innerHTML = 'ver más';
         };
 
@@ -42,8 +46,10 @@ class ViewText {
             const verMas = dataText.querySelector('.more');
             const descripcion = dataText.querySelector('.description');
             title.classList.toggle('mover-title');
+            title.classList.toggle('color-letra-blanca');
             descripcion.classList.toggle('mostrar-description');
             verMas.classList.toggle('mover-more');
+            verMas.classList.toggle('color-letra-blanca');
             verMas.innerHTML == 'ver más' ? verMas.innerHTML = 'ver menos' : verMas.innerHTML = 'ver más';
         };
     };
