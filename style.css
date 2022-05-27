@@ -176,10 +176,8 @@ menu .menu{
 }
 
 section{
+    scroll-snap-align: center;
     color: var(--blanco);
-}
-#scroll{
-    scroll-snap-align: start;
 }
 
 #landing{
